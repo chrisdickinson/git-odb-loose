@@ -1,0 +1,27 @@
+{
+  "name": "git-odb-loose",
+  "version": "0.0.0",
+  "description": "git loose object database",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisdickinson/git-odb-loose.git"
+  },
+  "keywords": [
+    "git",
+    "odb",
+    "loose"
+  ],
+  "author": "Chris Dickinson <chris@neversaw.us>",
+  "license": "MIT",
+  "gitHead": "d5980fceabe672775c09ddec58a518b5db3a22c9",
+  "dependencies": {
+    "through": "~2.2.7"
+  },
+  "devDependencies": {
+    "tape": "~0.3.0"
+  }
+}
