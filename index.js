@@ -8,7 +8,7 @@ TYPE_MAP = {
     'commit': 1 
   , 'tree': 2 
   , 'blob': 3 
-  , 'tag': 0
+  , 'tag': 4 
 }
 
 create_loose.accept = accept
