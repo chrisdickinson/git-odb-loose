@@ -33,8 +33,6 @@ function create_loose(entry, fs, find_oid, ready) {
     var rest = oid.slice(1).toString('hex')
       , dir = path.join(source, rest)
 
-    console.log(dir)
-
     fs.createReadStream(dir)
       .on('error', function(err) { ready(null, undefined) })
       .pipe(parse_loose())
