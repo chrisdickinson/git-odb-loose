@@ -4,8 +4,9 @@ var parse_loose = require('./parse')
 
 create_loose.accept = accept
 
-function create_loose(source, fs, find_oid, ready) {
-  var prefix_str = /\/([0-9a-fA-F]{2})\//.exec(source)[1]
+function create_loose(entry, fs, find_oid, ready) {
+  var source = entry.path
+    , prefix_str = /\/([0-9a-fA-F]{2})\//.exec(source)[1]
     , prefix = parseInt(prefix_str, 16)
 
   ready(null, {
