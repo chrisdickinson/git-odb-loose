@@ -5,10 +5,10 @@ var parse_loose = require('./parse')
   , TYPE_MAP
 
 TYPE_MAP = { 
-    'commit': 0
-  , 'tree': 1
-  , 'blob': 2
-  , 'tag': 3
+    'commit': 1 
+  , 'tree': 2 
+  , 'blob': 3 
+  , 'tag': 0
 }
 
 create_loose.accept = accept
